@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Responsive Navigation</title>
+  </head>
+  <body>
+    <header>
+      <div class="relative z-20 border-b bg-white">
+        <div class="px-6 md:px-12 lg:container lg:mx-auto lg:px-6 lg:py-4">
+          <div class="flex items-center justify-between">
+            <div class="relative z-20">
+              <a href="#">
+                <img src="./imgs/constructive.svg" alt="logo Constructive.co" class="w-36" />
+              </a>
+            </div>
+            <div class="flex items-center justify-end border-l lg:border-l-0">
+              <input aria-label="open and close mobile menu" type="checkbox" name="menu" id="menu" class="peer" hidden />
+              <label for="menu" class="block relative z-20 p-6 -mr-6 md:-mr-12 cursor-pointer lg:hidden peer-checked:menu">
+                <div aria-hidden="true" class="m-auto h-0.5 w-6 rounded bg-sky-900 transition duration-300"></div>
+                <div aria-hidden="true" class="m-auto h-0.5 w-6 rounded bg-sky-900 transition duration-300 mt-2"></div>
+              </label>
+              <div class="peer-checked:translate-x-0 fixed inset-0 w-[calc(100%-4.5rem)] translate-x-[-100%] bg-white border-r shadow-xl transition duration-300 lg:border-r-0 lg:w-auto lg:static lg:shadow-none lg:translate-x-0">
+                <div class="flex flex-col h-full justify-between lg:items-center lg:flex-row">
+                  <ul class="px-6 pt-32 text-gray-700 space-y-8 md:px-12 lg:space-y-0 lg:flex lg:space-x-12 lg:pt-0">
+                    <li>
+                      <a href="#" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:bg-cyan-100">
+                        <span class="relative text-cyan-800">Home</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-left before:scale-x-0 before:bg-cyan-100 before:transition before:duration-200 hover:before:scale-x-100">
+                        <span class="relative group-hover:text-cyan-800">Services</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-left before:scale-x-0 before:bg-cyan-100 before:transition before:duration-200 hover:before:scale-x-100">
+                        <span class="relative group-hover:text-cyan-800">Portfolio</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-left before:scale-x-0 before:bg-cyan-100 before:transition before:duration-200 hover:before:scale-x-100">
+                        <span class="relative group-hover:text-cyan-800">About us</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="border-t py-8 px-6 md:px-12 md:py-16 lg:border-t-0 lg:border-l lg:py-0 lg:pr-0 lg:pl-6">
+                    <a href="#" class="block px-6 py-3 rounded-full bg-gradient-to-r from-sky-600 to-cyan-400 text-center text-white">Get started</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="bundle.js"></script>
+  </body>
+</html>
