@@ -9,4 +9,9 @@
     .menu div:last-child{
         @apply -rotate-45 -translate-y-1
     }
+
+    .h-dynamic{
+        height: calc(100vh - 60px) ;
+        height: calc(100dvh - 60px) ;
+    }
 }
